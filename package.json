@@ -6,6 +6,12 @@
   "main": "./index.js",
   "author": "Matt Crutchfield <matt.crutchfield@turner.com>",
   "dependencies": {
-    "stylelint-order": "0.3.0"
-  }
+    "stylelint-order": "0.3.0",
+    "snyk": "^1.192.4"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
